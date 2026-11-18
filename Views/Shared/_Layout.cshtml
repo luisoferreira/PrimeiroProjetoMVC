@@ -13,12 +13,12 @@
     <nav>
         <a asp-asp-controller="Home"  asp-action="Index">Início</a>
         <a asp-asp-controller="Home"  asp-action="Sobre">Sobre</a>
+        <a asp-asp-controller="Home"  asp-action="Saudacao">Início</a>
         <a asp-asp-controller="Alunos"  asp-action="Alunos">Alunos</a>
         <a asp-asp-controller="Alunos"  asp-action="Criar">Novo Aluno</a>
         <a asp-asp-controller="Alunos"  asp-action="Buscar">Buscar</a>
-        <a asp-asp-controller="Home"  asp-action="Saudacao">Início</a>
     </nav>
-
+        <hr />
        @RenderBody()
   
     @await RenderSectionAsync("Scripts", required: false)

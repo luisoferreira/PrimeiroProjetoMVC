@@ -1,9 +1,19 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Início";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-    <h1>Novo</h1>
-</div>
+<h1>Página inicial</h1>
+<p>@ViewData["Mensagem"]</p>
+
+@if( DateTime.Now.Hour < 12)
+{
+    <P>Bom dia!</P>
+}
+else if(DateTime.Now.Hour > 19)
+{
+    <p>Boa noite!</p>
+}
+else
+{
+    <p>Boa tarde!</p>
+}
